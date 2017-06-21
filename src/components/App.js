@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Header from './Header';
+import Footer from './Footer';
 
 class App extends Component {
   
-  // componentDidMount () {
-
-  // }
-
   render () {
     return (
       <div>
-        I'M THE APP COMPONENT!
+        <Header />
+        {this.props.children}
+        <Footer />
       </div>
     );
   }
