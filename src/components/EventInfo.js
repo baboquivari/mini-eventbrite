@@ -12,11 +12,13 @@ class EventInfo extends Component {
     return (
       <div>
         I AM THE EVENT INFORMATION PAGE
-        <Button /> // render a nice button using Bulma. This has gotta reroute to BOOKING PAGE/
+        <Button /> 
       </div>
     );
   }
 }
+
+// render a nice button using Bulma. This has gotta reroute to BOOKING PAGE/
 
 
 EventInfo.propTypes = {};

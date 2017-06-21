@@ -6,9 +6,9 @@ const Button = (props) => {
   //  this button has gotta re-route to the BOOKING PAGE
   return (
     <div>
-      <img/>> // the thumbnail
-      <h3>Event Title</h3>
-      <p>Date</p>
+      <button>
+        GET ME THERE, JON!
+      </button>
     </div>
   );
 };

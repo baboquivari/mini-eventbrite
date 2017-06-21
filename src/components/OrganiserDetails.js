@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const OrganiserDetails = (props) => {
   return (
     <div>
-      Order Summary
+      Organiser Details
     </div>
   );
 };

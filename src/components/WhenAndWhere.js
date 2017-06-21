@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const WhenAndWhere = (props) => {
   return (
     <div>
-      Order Summary
+      When and Where
     </div>
   );
 };

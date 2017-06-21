@@ -15,7 +15,7 @@ class BookingPage extends Component {
   render () {
     return (
       <div>
-        I AM THE BLOODY BOOKER
+        Book your event here.
         <OrderSummary />
         <WhenAndWhere />
         <RegistrationForm />
