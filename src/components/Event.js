@@ -7,34 +7,72 @@ const Event = (props) => {
   let URL = `/event/${props.id}`;
 
   // TODO: Come back and make these Event Cards PRETTY.
-  // TODO: Format the props.date, either by finding a method or creating a helper function to do it.
   
   return (
     <Link to={URL}>
-      <article className='media'>
+      <div className="card">
+  <div className="card-image">
+    <figure className="image is-4by3">
+      <img src={props.thumb} alt="Image" />
+    </figure>
+  </div>
+  <div className="card-content">
+    <div className="media">
+      <div className="media-left">
+       
+      </div>
+      <div className="media-content">
+        <p className="title is-4">{props.name}</p>
+      </div>
+    </div>
 
-        <figure className="media-left">
-          <p className="image is-64x64">
-            <img src={props.thumb} alt="thumbnail" /> 
-          </p>
-        </figure>
-
-        <div className="media-content">
-          <div className="content">
-              <h3>{props.name}</h3>
-          </div>
-        </div>
-        
-        
-
-
-
-        <p>{props.date}</p>
-      </article>
+    <div className="content">
+      <br />
+      <small>{formatDate(props.date)}</small>
+    </div>
+  </div>
+</div>
     </Link>
   );
+
+function formatDate (str) {
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  const date = str.split('T')[0].split('-');
+  const clock = str.split('T')[1].split(':');
+
+  const month = months[Number(date[1])];
+  const day = createDay(Number(date[2]));
+  const year = date[0].slice(2);
+  const time = `${clock[0]}:${clock[1]}`;
+
+  function createDay (day) {
+    switch (day) {
+      case 1:
+      case 21:
+      case 31:
+        return `${day}st`;
+      case 2:
+      case 22:
+        return `${day}nd`;
+      case 3:
+      case 23:
+        return `${day}rd`;
+      default:
+        return `${day}th`;
+    }
+  }
+
+  return `${day} ${month} '${year} @ ${time}`;
+
+}
+
 };
 
+
 Event.PropTypes = {};
+// thumb
+// name
+// date
 
 export default Event;

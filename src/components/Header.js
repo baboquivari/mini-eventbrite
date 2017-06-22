@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 const Header = (props) => {
   return (
     <div className="header">
-      <Link to="/">wot-zon-jon?</Link>  
+      <Link to="/">what's-on-Jon?</Link>  
     </div>
   );
 };

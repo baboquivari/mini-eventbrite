@@ -34,7 +34,7 @@ class EventInfo extends Component {
     return (
       <div>
         {this.displayInfo()}
-        <Button /> 
+        <Button url={this.state.event[0].url}/> 
       </div>
     );
   }
@@ -50,18 +50,15 @@ class EventInfo extends Component {
   }
 
   displayInfo () {
-    // TODO: How do I effectively display this HTML string as HTML?
     const html = this.state.event[0].description.html;
-
     const markup = {__html: html};
 
-    return <div dangerouslySetInnerHTML={markup} />;
+    return <div className="html" dangerouslySetInnerHTML={markup} />;
   }
 }
-
-// render a nice button using Bulma. This has gotta reroute to BOOKING PAGE/
 
 
 EventInfo.propTypes = {};
 
 export default EventInfo;
+

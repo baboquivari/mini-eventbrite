@@ -16,3 +16,17 @@
   display: inline-block;
   padding-bottom: 3em;
 }
+
+.card-image {
+  width : 10%;
+}
+
+#button {
+  width: 30%;
+  margin-left: 28em;
+  margin-top: 0.5em;
+}
+
+.html {
+  margin-left: 5em;
+}

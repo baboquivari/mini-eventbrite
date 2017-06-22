@@ -15,7 +15,7 @@ class EventList extends Component {
       fetching: true
     };
 
-    // bind handlers in here
+    // bind any handlers in here
   }
   
   // FETCH EVENT Name, Date and Thumbnails here
