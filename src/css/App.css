@@ -8,3 +8,11 @@
   margin-top: 3em;  
 }
 
+.media-left {
+  display: inline-block;
+}
+
+.media-content {
+  display: inline-block;
+  padding-bottom: 3em;
+}
