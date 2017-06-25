@@ -29,11 +29,9 @@ class EventInfo extends Component {
   render () {
     if (this.state.fetching) return (<Loading />);
     
-    // console.log(this.state);
-
     return (
       <div>
-        {this.displayInfo()}
+        <p className="htmlStyling">{this.displayInfo()}</p>
         <Button url={this.state.event[0].url}/> 
       </div>
     );

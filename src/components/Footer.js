@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Footer = (props) => {
   return (
     <div className='footer'>
-      footer
+      <p>by Tony Sian</p>
     </div>
   );
 };

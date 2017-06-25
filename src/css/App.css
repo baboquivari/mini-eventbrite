@@ -1,11 +1,56 @@
-.header {
-  background-color: blue;
-  margin-bottom: 3em;
+.main {
+  margin-left: 2em;
+  margin-right: 2em;  
+}
+
+#button {
+  width: 17%;
+  margin-left: 33.5em;
+  margin-top: 3.7em;
+  margin-bottom: 3.7em;  
+}
+
+.card {
+  border-radius: 3px;
+  padding: 20px;
+}
+
+
+.card-header {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.date {
+  text-align: right;
+  font-size: small;
+  padding-top: 10px;
+}
+
+#header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 0.1em;
+  margin-top: 0.9em;
+  padding-bottom: 0.1em;  
+  margin-bottom: 0.9em;
+}
+
+#header:hover {
+  color: #00D1B2;
 }
 
 .footer {
-  background-color: pink;
-  margin-top: 3em;  
+  text-align: center;
+  margin-top: 4em;
+  padding: 10px;
+}
+
+.loading {
+  margin-left: 240px;
+  padding-top: 10px;
 }
 
 .media-left {
@@ -21,12 +66,21 @@
   width : 10%;
 }
 
-#button {
-  width: 30%;
-  margin-left: 28em;
-  margin-top: 0.5em;
-}
 
 .html {
-  margin-left: 5em;
+  margin-left: 8em;
+  margin-right: 8em; 
+}
+
+.htmlStyling {
+ font-size: 17px;
+}
+
+#thumb {
+  height: 150px;
+  width: 300px;
+  border-radius: 3px;
+  margin-top: 12px;
+  margin-left: 37px;
+  padding-bottom: 0.3em;
 }

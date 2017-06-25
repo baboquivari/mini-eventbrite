@@ -4,8 +4,12 @@ import { Link } from 'react-router';
 
 const Header = (props) => {
   return (
-    <div className="header">
-      <Link to="/">what's-on-Jon?</Link>  
+    <div className="container is-fluid">
+      <div>
+        <Link to="/">
+          <h1 id="header">what's-on-Jon?</h1>
+        </Link>  
+      </div>
     </div>
   );
 };
