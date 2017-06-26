@@ -7,7 +7,9 @@
   width: 17%;
   margin-left: 33.5em;
   margin-top: 3.7em;
-  margin-bottom: 3.7em;  
+  margin-bottom: 3.7em; 
+  background-color: #00D1B2; 
+  border-radius: 20px;
 }
 
 .card {
@@ -49,7 +51,7 @@
 }
 
 .loading {
-  margin-left: 240px;
+  margin-left: 344px;
   padding-top: 10px;
 }
 
@@ -68,8 +70,12 @@
 
 
 .html {
-  margin-left: 8em;
-  margin-right: 8em; 
+  margin-left: 14em;
+  margin-right: 14em; 
+}
+
+.html p {
+  padding: 1em;
 }
 
 .htmlStyling {

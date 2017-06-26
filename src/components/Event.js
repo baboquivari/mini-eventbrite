@@ -12,8 +12,8 @@ const Event = (props) => {
         <div className="card">
 
           <div className="card-header">
-            <p>{props.name}</p>
-          </div>
+          <p>{props.name}</p>
+          </div> 
 
           <div>
             <img id="thumb" src={props.thumb} alt="image" height="300" width="300" />

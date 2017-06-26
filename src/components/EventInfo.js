@@ -18,7 +18,6 @@ class EventInfo extends Component {
   // FETCH same events you get from EVENTLIST, then map through and ONLY add the article ID that matches the incoming PARAMS to this local state
   componentDidMount () {
     this.setState({event: [], fetching: true});
-
     request
       .get(URL)
       .end((error, response) => {
@@ -31,7 +30,7 @@ class EventInfo extends Component {
     
     return (
       <div>
-        <p className="htmlStyling">{this.displayInfo()}</p>
+        <div className="htmlStyling">{this.displayInfo()}</div>
         <Button url={this.state.event[0].url}/> 
       </div>
     );

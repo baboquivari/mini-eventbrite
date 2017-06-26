@@ -60,9 +60,8 @@ class EventList extends Component {
         return;
       }
       return (
-        <div className="column">
+        <div className="column" key={i}>
           <Event
-            key={i}
             name={event.name.text}
             date={event.start.local}
             thumb={event.logo.url}
@@ -75,7 +74,7 @@ class EventList extends Component {
   createEventsB () {
     let count = 0;
     return this.state.events.map((event, i) => {
-      if (i < 12) return;
+      if (i < 20) return;
       count++;
       if (count > 3) return;
       if (event.name.text.length > 47) {
@@ -87,9 +86,8 @@ class EventList extends Component {
         return;
       }
       return (
-        <div className="column">
+        <div className="column" key={i}>
           <Event
-            key={i}
             name={event.name.text}
             date={event.start.local}
             thumb={event.logo.url}
@@ -102,7 +100,7 @@ class EventList extends Component {
   createEventsC () {
     let count = 0;
     return this.state.events.map((event, i) => {
-      if (i < 24) return;
+      if (i < 40) return;
       count++;
       if (count > 3) return;
       if (event.name.text.length > 47) {
@@ -114,9 +112,8 @@ class EventList extends Component {
         return;
       }
       return (
-        <div className="column">
+        <div className="column" key={i}>
           <Event
-            key={i}
             name={event.name.text}
             date={event.start.local}
             thumb={event.logo.url}
