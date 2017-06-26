@@ -68,6 +68,9 @@
   width : 10%;
 }
 
+#sub-header {
+  font-size: 14px;
+}
 
 .html {
   margin-left: 14em;
@@ -76,6 +79,12 @@
 
 .html p {
   padding: 1em;
+}
+
+.html img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .htmlStyling {

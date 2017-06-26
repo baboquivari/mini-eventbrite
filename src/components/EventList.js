@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import request from 'superagent';
 import Loading from './Loading';
 import Footer from './Footer';
@@ -124,8 +123,5 @@ class EventList extends Component {
     });
   }
 }
-
-
-EventList.propTypes = {};
 
 export default EventList;

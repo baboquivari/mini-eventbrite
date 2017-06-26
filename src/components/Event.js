@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import { formatDate } from './lib/helpers';
 
@@ -29,12 +28,6 @@ const Event = (props) => {
   );
 
 };
-
-
-Event.PropTypes = {};
-// thumb
-// name
-// date
 
 export default Event;
      

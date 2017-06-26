@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const Button = (props) => {
   //  this button has gotta re-route to the BOOKING PAGE
@@ -11,7 +10,5 @@ const Button = (props) => {
     </div>
   );
 };
-
-Button.PropTypes = {};
 
 export default Button;

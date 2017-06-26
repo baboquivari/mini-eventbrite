@@ -4,7 +4,7 @@ export function formatDate (str) {
   const date = str.split('T')[0].split('-');
   const clock = str.split('T')[1].split(':');
 
-  const month = months[Number(date[1])];
+  const month = months[Number(date[1]) - 1];
   const day = createDay(Number(date[2]));
   const year = date[0].slice(2);
   const time = `${clock[0]}:${clock[1]}`;
